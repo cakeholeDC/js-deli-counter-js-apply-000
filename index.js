@@ -5,10 +5,13 @@ function takeANumber(queue, customer){
 
 var totalCustomers =0;
 
-function takeANumber2(totalCustomers){
+function takeANumber2(){
   totalCustomers++;
   console.log(`You are customer number ${totalCustomers}`);
-} 
+}
+
+takeANumber2();
+takeANumber2();
 
 function nowServing(queue){
   if (queue.length < 1) {
