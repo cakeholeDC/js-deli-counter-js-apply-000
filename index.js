@@ -3,6 +3,13 @@ function takeANumber(queue, customer){
   return `Welcome, ${customer}. You are number ${queue.length} in line.`;
 }
 
+var totalCustomers =0;
+
+function takeANumber2(totalCustomers){
+  totalCustomers++;
+  console.log(`You are customer number ${totalCustomers}`);
+} 
+
 function nowServing(queue){
   if (queue.length < 1) {
     return 'There is nobody waiting to be served!';
